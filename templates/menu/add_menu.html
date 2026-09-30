@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add Menu
+{% endblock %}
+
+{% block content %}
+
+<h1>
+    Add Food Item
+</h1>
+
+<form action="/add-menu" method="post" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Food Name">
+    <input type="number" name="price" placeholder="Price">
+    <textarea name="description" placeholder="description"></textarea>
+
+    <select name="category">
+        {% for c in categories %}
+        <option value="{{ c.name }}">
+            {{c.name}}
+        </option>
+        {%endfor %}
+    </select>
+
+    <input type="file" name="image">
+    <button>Add Food</button>
+</form>
+
+{% endblock %}

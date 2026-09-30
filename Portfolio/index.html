@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/NazakatPhoto.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Najakat</span></br> Ali from Loni</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about------------ -->
+    <div id="about"></div>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- user photo -->
+                    <img src="images/NazakatPhoto.jpeg" alt="user photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quis deleniti sint? Impedit deleniti totam ipsum labore vel veniam voluptate rem perferendis alias error, corrupti nostrum facilis veritatis ipsam fugit!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>Designing Web/App interfaces</li>
+                            <li><span>Backend</span><br>Web App Development</li>
+                            <li><span>JAVA , C , PYTHON</span><br>Basic Knowledge</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>Hackhothon Participation Certificate,<br>Java Course CErtificate with<span> (79%)</span>,<br>No Job Experience</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2027</span><br>74% sem(1st & 2nd),<br>70% sem(3rd & 5th),<br>B-TECH (Persuing...)</li>
+                            <li><span>2021 - 2022</span><br>12th (66%)</li>
+                            <li><span>2019 - 2020</span><br>10th (69%)</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------services---------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Frontend Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, libero! Corrupti modi error omnis quidem soluta </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>Backend Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, libero! Corrupti modi error omnis quidem soluta </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <h2>Full Stack Developer</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, libero! Corrupti modi error omnis quidem soluta </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-------------------portfolio---------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/bus.jpg">
+                    <div class="layer">
+                        <h3>Clone</h3>
+                        <p>This is clone of Amazon Web frontend </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bus.jpg">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>This is for Calculation perpose </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bus.jpg">
+                    <div class="layer">
+                        <h3>Tic Tac Toe</h3>
+                        <p>This is the Game for enjoyment </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#"class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -----------------------contact---------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>rajputnazakat3@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>8810677490</p>
+                    <div class="social-icons">
+                        <!-- Facebook URL enter -->
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nazakat-ali-a4aa1233b?utm_source=share&utm_campaign=share_via&utm_contact=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/nazakat8810677490"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="Images/Resume (2) (2).docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="contact-form">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------footer----------------------- -->
+         <div class="copyright">
+            <p>All Copyright made <i class="fas fa-heart"></i> by Najakat Ali</p>
+         </div>
+    </div>
+
+
+
+        <!-- --------------------------script---------------------- -->
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+        <!-- -----------------------For Contact page from github---------------------- -->
+
+            <script>
+                const scriptURL = "https://script.google.com/macros/s/AKfycbyoihqBBZmAoFNtogJ0bdfre1aMTt6rTnywGq21tybi_PTVsftTm-IDmWhCHlruxrvubw/exec";
+                const form = document.forms["contact-form"];
+                const msg = document.getElementById("msg")
+
+                form.addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                fetch(scriptURL, {
+                    method: "POST",
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset();
+                })
+                // .then(data => {
+                //     alert("Form Submitted Successfully!");
+                //     form.reset();
+                // })
+                .catch(error => console.error("Error!", error));
+                });
+            </script>
+</body>
+</html>

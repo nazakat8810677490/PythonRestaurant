@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+Food Menu
+{% endblock %}
+
+{% block content %}
+
+<h1>Our Food Menu</h1>
+
+<div class="cards">
+    {% for item in menus %}
+
+    <div class="card">
+        <img src="/static/images/{{item.image}}">
+        <h2>
+            {{item.name}}
+        </h2>
+        <h3>
+            ₹{{item.price}}
+        </h3>
+        <p>
+            {{item.description}}
+        </p>
+        <p>
+            Category: {{item.Category}}
+        </p>
+        <a href="/add-cart/{{item._id}}">Add To Cart</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

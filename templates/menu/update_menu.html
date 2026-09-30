@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Food Update</h1>
+
+<form action="/update-menu/{{menu._id}}" method="post">
+    <input type="text" name="name" value="{{menu.name}}">
+    <input type="number" name="price" value="{{menu.price}}">
+    <textarea name="description">{{menu.description}}</textarea>
+    <button>Update</button>
+</form>
+
+{% endblock %}

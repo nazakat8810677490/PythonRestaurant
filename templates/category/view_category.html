@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+Categories
+{%endblock %}
+
+{% block content %}
+
+<h1>All Categories</h1>
+
+{% for category in categories %}
+
+<div class="card">
+    <h3>{{category.name}}</h3>
+    <a href="/delete-category/{{category._id}}">Delete</a>
+</div>
+
+{% endfor %}
+{%endblock%}

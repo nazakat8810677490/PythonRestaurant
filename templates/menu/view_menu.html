@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}
+Menu
+{% endblock %}
+
+{% block content %}
+
+<h1>Our Menu</h1>
+
+<form action="/search-menu" method="get">
+    <input 
+        type="text" name="q" placeholder="Search Food">
+    <button>
+        Search
+    </button>
+</form>
+
+<div class="cards">
+    {% for item in menus %}
+    
+    <div class="card">
+        <img src="/static/images/{{item.image}}" alt="image loading">
+        <h2>{{item.name}}</h2>
+        <h3>₹{{item.price}}</h3>
+        <p>{{item.description}}</p>
+        <p>category: {{item.category}}</p>
+        <a href="/delete-menu/{{item._id}}">
+        Delete
+        </a>
+
+
+        <a href="/update-menu/{{item._id}}">
+        Update
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

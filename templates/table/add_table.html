@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add Table
+{% endblock %}
+
+{% block content %}
+
+<h1>Add Restaurent Table</h1>
+
+<form action="/add-table" method="post">
+    <input type="number" name="table_no" placeholder="Table No">
+    <input type="number" name="seats" placeholder="Number of Seats">
+    <select name="status">
+        <option>Available</option>
+        <option>Booked</option>
+    </select>
+    <button>Save Table</button>
+</form>
+
+{% endblock %}

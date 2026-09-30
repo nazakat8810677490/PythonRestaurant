@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}
+Create Order
+{% endblock %}
+
+{% block content %}
+
+<h1>
+Place Your Order
+</h1>
+
+<form action="/create-order" method="post">
+    
+    <input type="text" name="customer_name" placeholder="Customer Name">
+
+    <select name="food">
+        
+        {% for item in menus %}
+
+        <option value="{{item.name}}">
+            {{item.name}} - ₹{{item.price}}
+        </option>
+        {% endfor %}
+    </select>
+
+    <input type="number" name="quantity" placeholder="Quantity">
+
+    <select name="table">
+        
+        {% for t in tables %}
+
+        <option value="{{t.table_no}}">
+            Table {{t.table_no}}
+        </option>
+
+        {% endfor %}
+    </select>
+
+    <button>Place Order</button>
+
+</form>
+{% endblock %}

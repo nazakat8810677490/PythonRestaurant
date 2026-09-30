@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Restaurant Management System</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block title %}
+    Home
+    {% endblock %}
+
+    {% block content %}
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>Welcome To My Restaurant</h1>
+            <p>Delicius Food With Primium Quality</p>
+
+            <!-- <button>Order Now</button> -->
+            <a href="/view-menu">View Menu</a>
+        </div>
+    </section>
+
+    <section class="about">
+
+        <h2>About Our Restaurant</h2>
+        <p>
+            We provide fresh food , quality service and a great dining experience for our customer.
+        </p>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <div>
+                🍕<h3>Quality Food</h3>
+                <p>Fresh ingredients and tasty dishes</p>
+            </div>
+
+            <div>
+                🚚<h3>Fast Delivery</h3>
+                <p>Quick and safe food delivery</p>
+            </div>
+
+            <div>
+                👨‍🍳<h3>Expert Chefs</h3>
+                <p>Experienced chefs prepare your food</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contect">
+        <h2>Contect us</h2>
+        <p>📍 Your City</p>
+        <p>📞 +91 8810677490</p>
+        <p>✉ restaurant@gmail.com</p>
+    </section>
+
+    {% endblock %}
+
+
+
+    
+</body>
+</html> 

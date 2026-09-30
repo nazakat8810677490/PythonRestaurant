@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>My Orders</h1>
+
+{% for order in orders %}
+
+<div class="card">
+    <h3>Order</h3>
+    {% for item in order.items %}
+    <p>
+        {{item.name}}
+        {{item.qty}}
+    </p>
+    {% endfor %}
+
+    <h3>Total: ₹{{order.total}}</h3>
+    <p>Status: {{order.status}}</p>
+</div>
+
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+Tables
+{% endblock %}
+
+{% block content %}
+
+<h1>
+Restaurant Tables
+</h1>
+
+<div class="cards">
+
+    {% for table in tables %}
+
+    <div class="card">
+        <h2>Table NO: {{table.table_no}}</h2>
+        <p>Seats: {{table.seats}}</p>
+        <p>Status: {{table.status}}</p>
+        <a href="/delete-table/{{table._id}}">Delete</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

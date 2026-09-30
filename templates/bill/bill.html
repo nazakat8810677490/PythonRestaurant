@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}
+Invoice
+{% endblock %}
+
+{% block content %}
+
+<div class="bill">
+
+    <h1>My Restaurent</h1>
+    <h2>Customer Bill</h2>
+
+    <hr>
+
+    <p>
+        Customer Name: {{order.customer_name}}
+    </p>
+    <p>
+        Food: {{order.food}}
+    </p>
+    <p>
+        Quantity: {{order.quantity}}
+    </p>
+    <p>
+        Table: {{order.table}}
+    </p>
+    <p>
+        Food Amount: {{order.total}}
+    </p>
+    <p>
+        GST (18%): ₹(gst)
+    </p>
+    <h2>
+        Total Amount: ₹{{final_amount}} 
+    </h2>
+
+    <button onclick="window.print()">
+        Print Bill
+    </button>
+</div>
+
+{% endblock %}
